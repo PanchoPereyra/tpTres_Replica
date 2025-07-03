@@ -5,3 +5,25 @@
       padding: 0px;
       margin: 0px;
   }
+
+body{
+
+}
+
+header{
+
+}
+
+nav{
+
+}
+
+main{
+
+}
+
+.afiche{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
