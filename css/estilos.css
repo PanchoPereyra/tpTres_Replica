@@ -2,28 +2,73 @@
 
   /*Selector universal*/
   * {
-      padding: 0px;
-      margin: 0px;
+    padding: 0px;
+    margin: 0px;
   }
 
-body{
+  body {
+    background-color: #f9f9f9;
 
-}
+  }
 
-header{
+  header {}
 
-}
-
-nav{
-
-}
-
-main{
-
-}
-
-.afiche{
+  nav {
+    padding: 10px;
     display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
     align-items: center;
+    justify-content: space-around;
+  }
+
+  main {}
+
+  .navegador {
+    display: flex;
+    justify-items: center;
     justify-content: center;
-}
+  }
+
+  .contenedorUno {
+    background-color: rgb(216, 210, 210);
+    margin: 0px 500px;
+    max-width: 100%;
+     /* align-content: center; */
+    justify-content: center;
+  }
+
+  /* 
+  .afiche {
+   
+  }
+*/
+  /*clase que contiene los botones*/
+  /*  
+  .botonesOcultos {
+    display: none;
+    por defecto estan ocultos
+
+  }
+
+  .afiche:hover .botonesOcultos {
+    display: flex;
+  }
+
+  .afiche img {
+    max-width: 150px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .contenedorDos {
+    display: flex;
+    align-content: center;
+  }
+
+  .servicio {
+    background-color: black;
+    padding: 20px;
+
+  }
+   */
