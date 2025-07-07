@@ -11,7 +11,10 @@
 
   }
 
-  header {}
+  header {
+    background-color: white;
+
+  }
 
   nav {
     padding: 10px;
@@ -24,51 +27,128 @@
 
   main {}
 
+  section {
+    display: flex;
+    background-color: red;
+    justify-content: center;
+    /* centra horizontalmente */
+    align-items: center;
+    /* centra verticalmente */
+    position: relative;
+    margin: auto;
+    width: 1000px;
+    height: 600px;
+
+  }
+
+  /****** ACA ESTA LA PARTE DEL NAV *****/
   .navegador {
     display: flex;
     justify-items: center;
     justify-content: center;
   }
 
-  .contenedorUno {
-    background-color: rgb(216, 210, 210);
-    margin: 0px 500px;
-    max-width: 100%;
-     /* align-content: center; */
-    justify-content: center;
+  .logo {
+    border: solid 2px rgb(77, 77, 78);
+    border-radius: 8px;
+    padding: 2px;
   }
 
-  /* 
-  .afiche {
-   
+  .enlaceNav {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: small;
+    color: black;
+    text-decoration: none;
   }
-*/
-  /*clase que contiene los botones*/
-  /*  
-  .botonesOcultos {
+
+  .lista {}
+
+  .desplegable {
     display: none;
-    por defecto estan ocultos
-
+    color: rgb(68, 66, 66);
+    font-size: medium;
+    border: solid 1px rgb(152, 152, 153);
+    background-color: rgb(248, 241, 241);
+    border-radius: 5px;
+    padding: 5px;
+    list-style-type: none;
+    /*para sacar el punto que geenera el li*/
   }
 
-  .afiche:hover .botonesOcultos {
+  .menu:hover .desplegable {
     display: flex;
+    flex-direction: column;
+    position: absolute;
   }
 
-  .afiche img {
-    max-width: 150px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+
+  .botonesPrueba {
+    border: none;
+    border-radius: 25px;
+    padding: 8px 12px;
+    background: linear-gradient(to right, #99a1eb, #03039c);
+    color: rgb(255, 255, 255);
+
   }
 
-  .contenedorDos {
+  .botonSesion {
+    border: solid 2px rgb(120, 120, 236);
+    border-radius: 25px;
+    padding: 8px 12px;
+    background: rgb(232, 235, 238);
+    color: #1726ad
+  }
+
+  .botonSesion:hover {
+    background: rgb(44, 139, 233);
+    cursor: pointer;
+  }
+
+  .buscar {
+    border: solid 1px rgb(119, 119, 124);
+    border-radius: 25px;
+    padding: 8px 12px;
+    background: rgb(232, 233, 235);
+    color: grey;
+    font-style: oblique;
+  }
+
+  .adobe {
+    border: solid 2px rgb(77, 77, 78);
+    border-radius: 8px;
+    padding: 2px;
+  }
+
+
+  /****** ACA EMPIEZA LA PARTE DONDE ESTA EL BANNER ******/
+
+  section div img {
     display: flex;
-    align-content: center;
-  }
+    width: 190px;
 
-  .servicio {
-    background-color: black;
-    padding: 20px;
 
   }
-   */
+
+  .botonesOcultos {
+    display: flex;
+    display: none;
+    margin: 15px;
+  }
+
+  .seccionUno:hover .botonesOcultos {
+    display: flex;
+    position: absolute;
+    flex-direction: row;
+    left: 0;  /* Bien a la izquierda */
+   top: 0;
+    }
+
+    .btn{
+      padding: 8px 3px;
+      background-color: rgb(95, 90, 90);
+      color: white;
+      
+      margin: 5px;
+      border: solid rgb(37, 36, 36) 2px;
+      border-radius: 25px;
+    }
